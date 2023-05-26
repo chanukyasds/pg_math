@@ -597,9 +597,9 @@ LANGUAGE C STRICT;
 
 DROP FUNCTION IF EXISTS cdf_pareto_p(float8,float8,float8);
 
-CREATE OR REPLACE FUNCTION rdf_pareto(float8,float8,float8)
+CREATE OR REPLACE FUNCTION cdf_pareto_p(float8,float8,float8)
 RETURNS float8
-AS 'pg_math','rdf_pareto'
+AS 'pg_math','cdf_pareto_p'
 LANGUAGE C STRICT;
 
 DROP FUNCTION IF EXISTS cdf_pareto_q(float8,float8,float8);
