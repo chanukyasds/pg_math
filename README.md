@@ -2,7 +2,7 @@
 
 Pg_math is a C extension that utilises the GSL (GNU Scientific Library) to support Postgresql for various types of statistical distribution functions.
 
-### Available Distributions:
+## Available Distributions:
 
 1. F-Distribution
 2. Gaussian Distribution
@@ -36,7 +36,7 @@ Pg_math is a C extension that utilises the GSL (GNU Scientific Library) to suppo
 30. Hypergeometric Distribution
 31. Logarithmic Distribution
 
-### List of Functions:
+## List of Functions:
 
 #### Note:
 
