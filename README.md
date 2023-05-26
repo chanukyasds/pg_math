@@ -80,3 +80,9 @@ For Mac:
 
     select cdf_gaussian_qinv(0.05,5);
  
+## future development
+
+1. Regression tests
+
+2. Multi-column aggregates to perform statistics
+
