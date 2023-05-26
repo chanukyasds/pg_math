@@ -39,27 +39,43 @@ Available Distributions:
 30. Hypergeometric Distribution
 31. Logarithmic Distribution
 
+
+## dependencies
+
+[libgsl](https://www.gnu.org/software/gsl/) (GSL - GNU Scientific Library) package is required to compile this extension.
+
+For Ubuntu:
+
+    sudo apt-get install libgsl-dev
+    
+For Fedora:
+
+    sudo dnf -y install gsl
+or
+
+    sudo yum -y install gsl
+    
+For Mac:
+
+    brew install gsl
+    
 ## installation
 
-### dependencies
-libgsl package is required to compile this extension.
-For Ubuntu:
-    ```
-    sudo apt-get install libgsl-dev
-    ````
+1.Clone the repo
 
-1. Clone the repo
-    ```
-    https://github.com/chanukyasds/pg_math.git
-    ```
-2. Compile and install
-    ```
+    git clone https://github.com/chanukyasds/pg_math.git
+
+2.Compile and install
+
     cd pg_math
     make
     make install
-    ```
-3. Create extension on database
-    ```
+
+3.Create extension on database
+
     CREATE EXTENSION pg_math;
-    ```
+    
+## Usage
+
+    select cdf_gaussian_qinv(0.05,5);
  
