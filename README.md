@@ -3,6 +3,7 @@
 PostgreSQL Extension to support various statistical distribution functions with the help of GSL - GNU Scientific Library.
 
 Functions with prefix "cdf" is for cumulative distribution calculation
+
 Functions with prefix "rdf" is for random distribution calculation
 
 Available Distributions:
