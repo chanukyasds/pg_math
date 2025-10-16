@@ -171,20 +171,19 @@ pg_math is a C extension that utilises the GSL (GNU Scientific Library) to suppo
 
 [libgsl](https://www.gnu.org/software/gsl/) (GSL - GNU Scientific Library) package is required to compile this extension.
 
-For Ubuntu:
+**macOS (Homebrew):**
+   ```bash
+   brew install gsl openblas pkg-config
+   ```
+   Requires PostgreSQL (installed separately via Homebrew or system package).
 
-    sudo apt-get install libgsl-dev
-    
-For Fedora:
+**Linux:**
+   ```bash
+   sudo apt install gcc libgsl-dev libopenblas-dev pkg-config
+   ```
+   PostgreSQL (dev headers and binaries) must be installed beforehand.
 
-    sudo dnf -y install gsl
-or
 
-    sudo yum -y install gsl
-    
-For Mac:
-
-    brew install gsl
     
 ## Installation
 
@@ -206,9 +205,3 @@ For Mac:
 
     select cdf_gaussian_qinv(0.05,5);
  
-## Future development
-
-1. Regression tests
-
-2. Multi-column aggregates to perform statistics
-
