@@ -532,7 +532,7 @@ Datum cdf_gaussian_qinv(PG_FUNCTION_ARGS)
 
     gsl_set_error_handler_off();
 
-    res = gsl_cdf_gaussian_P(Q, sigma);
+    res = gsl_cdf_gaussian_Qinv(Q, sigma);
 
     if (gsl_finite(res))
         PG_RETURN_FLOAT8(res);
